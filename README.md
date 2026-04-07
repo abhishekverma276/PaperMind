@@ -13,7 +13,10 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
  
 ---
- 
+
+## Demo Video
+https://drive.google.com/file/d/1o2lQFQrCxcIYK5Gn7UR1E3f1xHBylrFa/view?usp=sharing
+
 ## What it does
  
 PaperMind deploys a team of 4 specialist AI agents orchestrated by a LangGraph supervisor:
