@@ -115,7 +115,7 @@ LangGraph Supervisor  (deterministic state router)
 | Concern | Technology |
 |---|---|
 | Containerisation | Docker + docker-compose |
-| Deployment | Fly.io / Render |
+| Deployment | Vercel / Render |
 | CI/CD | GitHub Actions |
 | Secrets | `.env` + platform environment variables |
 
@@ -130,7 +130,7 @@ papermind/
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
-├── fly.toml / render.yaml
+├── render.yaml
 │
 ├── core/
 │   ├── config.py                  # Pydantic settings (env-driven)
