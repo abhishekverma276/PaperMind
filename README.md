@@ -176,60 +176,8 @@ papermind/
             ├── Sidebar.jsx        # Provider status, KB stats, PDF upload
             ├── LoginModal.jsx     # Email / Google auth
             └── ThemeToggle.jsx
+
 ```
-
-## API Reference
-
-All endpoints are prefixed `/api/v1`. Interactive docs at `/docs`.
-
-### Research
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/research` | ✅ | Run full pipeline (REST, blocking). Rate-limited: 3 req/min per user |
-| `WS` | `/ws/research` | ✅ | Stream agent events + report tokens in real time |
-| `POST` | `/citation-graph` | ✅ | Fetch citation graph data from Semantic Scholar for a list of papers |
-
-**WebSocket protocol:**
-
-Send after connection:
-```json
-{ "query": "attention mechanism in transformers", "follow_up": true }
-```
-
-Receive event stream:
-```json
-{ "type": "pipeline_start",    "message": "...", "data": {} }
-{ "type": "agent_start",       "message": "🔍 Searching 6 academic sources...", "data": { "agent": "search_agent" } }
-{ "type": "agent_complete",    "message": "✅ Found 42 papers", "data": { "papers_found": 42 } }
-{ "type": "report_token",      "message": "The attention mechanism...", "data": {} }
-{ "type": "pipeline_complete", "message": "Research complete.", "data": { "report": "...", "papers_found": 42, "follow_up_questions": [...], "papers": [...] } }
-```
-
-### History
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/history` | ✅ | List last 20 research sessions |
-| `GET` | `/history/{id}` | ✅ | Get full report for a session |
-| `DELETE` | `/history/{id}` | ✅ | Delete a session |
-
-### Knowledge Base
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `POST` | `/upload-pdf` | ✅ | Ingest a PDF into the user's vector store |
-| `GET` | `/vector-store/stats` | ✅ | Chunk count and status |
-| `DELETE` | `/vector-store/clear` | ✅ | Remove all user's documents |
-
-### System
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| `GET` | `/providers` | — | Active LLM provider and configured fallbacks |
-| `GET` | `/health` | — | Health check |
-
----
 
 ## How It Works
 
