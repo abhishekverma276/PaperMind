@@ -231,31 +231,6 @@ Receive event stream:
 
 ---
 
-## Deployment
-
-### Fly.io (recommended)
-
-```bash
-fly auth login
-fly launch          # detects fly.toml automatically
-fly secrets set GROQ_API_KEY=... SUPABASE_URL=... SUPABASE_KEY=... SECRET_KEY=...
-fly deploy
-```
-
-### Render
-
-Connect your GitHub repo to Render — `render.yaml` is pre-configured. Set environment variables in the Render dashboard.
-
-### Docker (self-hosted)
-
-```bash
-docker compose up -d
-```
-
-The `docker-compose.yml` mounts `./chroma_db` and `./uploaded_pdfs` as volumes so data persists across restarts.
-
----
-
 ## How It Works
 
 ### Agent Pipeline
@@ -283,26 +258,6 @@ providers = [
 ```
 
 `LLM_PROVIDER` sets the primary. If it fails at runtime, the next available provider is tried automatically.
-
-### Per-User Vector Store Isolation
-
-ChromaDB documents are tagged with `user_id` metadata. All queries filter by `user_id` so users never see each other's uploaded content.
-
----
-
-## Contributing
-
-Pull requests are welcome. For major changes, open an issue first.
-
-```bash
-# Run the API in dev mode (auto-reload)
-APP_ENV=development python main.py
-
-# Run the frontend dev server
-cd papermind-react && npm run dev
-```
-
-Code style: Python follows PEP 8 with 4-space indentation. JavaScript uses 2-space indentation and no semicolons.
 
 ---
 
