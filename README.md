@@ -12,9 +12,8 @@
 ---
 
 ## Live Video:
-https://drive.google.com/file/d/1N1kYi-Y_DtZqZEE0K56GQQRg1DAN9FZW/view?usp=sharing
-
-> ▶ Click to watch — multi-agent research pipeline in action
+[ ▶ Click to watch — multi-agent research pipeline in action
+](https://drive.google.com/file/d/1EecKOrNrOXNoy__oqW27HIUOjfC2bsCc/view?usp=sharing)
 
 </div>
 
