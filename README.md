@@ -1,24 +1,3 @@
-# 🧠 PaperMind — Multi-Agent AI Research Assistant
-
-> A production-grade multi-agent system that autonomously searches 7 academic databases in parallel, synthesizes findings across papers, and delivers structured research reports with citation grounding, contradiction detection, and confidence scoring — streamed token by token in real time.
-  
-[![Python](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![LangGraph](https://img.shields.io/badge/LangGraph-1.1-6f42c1)](https://langchain-ai.github.io/langgraph)
-[![React](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)](https://react.dev)
-[![Supabase](https://img.shields.io/badge/Supabase-Auth%20%2B%20pgvector-3ecf8e?logo=supabase&logoColor=white)](https://supabase.com)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-
----
-
-## Live Video:
-[ ▶ Click to watch — multi-agent research pipeline in action
-](https://drive.google.com/file/d/1EecKOrNrOXNoy__oqW27HIUOjfC2bsCc/view?usp=sharing)
-
-</div>
-
----
-
 <div align="center">
 
 # 🔬 PaperMind
@@ -32,6 +11,10 @@
 ![Status](https://img.shields.io/badge/status-private%20beta-green?style=flat-square)
 
 > *PaperMind deploys a coordinated team of AI agents across 7 academic databases, summarizes every relevant paper, and synthesizes a fully cited research report — automatically.*
+
+---
+
+[![▶ Watch Live Demo](https://img.shields.io/badge/▶%20Watch%20Live%20Demo-Drive-blue?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1EecKOrNrOXNoy__oqW27HIUOjfC2bsCc/view)
 
 ---
 
@@ -352,6 +335,7 @@ CREATE TABLE feedback (
 
 Built end-to-end as a full-stack AI systems project — LLM orchestration, multi-agent graph design, vector retrieval, real-time WebSocket streaming, interactive D3 visualization, and production auth/rate-limiting.
 
+Contact: abhishek27.sv@gmail.com
 ---
 
 <div align="center">
